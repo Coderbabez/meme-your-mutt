@@ -1,6 +1,11 @@
 .slice-image{
 	height: auto;
-	width: 40%;
+	width: 50%;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
 }
 
 .slice1{
