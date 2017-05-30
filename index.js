@@ -58,4 +58,27 @@ $(document).ready(function() {
 		"'Doesn't have a preference' for her bridesmaid dress but will Not wear a halter.",
 	];
 
+	var clickedInfo = [];
+    var message = “”;
+
+    function assignInfo() {
+        clickedInfo.name = $("#name").val();
+        clickedInfo.age = $("#age").val();
+        clickedInfo.gender = $("#gender").val();
+        info.characteristics = [
+              {basic: $("#basic").val()},
+              {active: $("#active").val()},
+              {grumpy: $("#grumpy").val()}
+              ]
+       }
+
+
+
+
+
+
+
+
 });
+
+
