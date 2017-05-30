@@ -55,22 +55,29 @@ $(document).ready(function() {
 		"Going through a 'gigantic floppy hat' phase.",
 		"Favorite quote: 'Do you have any Rosé?'",
 		"Couldn't tell you what 'it' is but is definitely #Overit.",
-		"'Doesn't have a preference' for her bridesmaid dress but will Not wear a halter.",
+		"'Doesn't have a preference' for her bridesmaid dress but will NOT wear a halter.",
 	];
 
+	$("#submit").on("click", function(){
+		assignInfo();
+		console.log("user submitted");
+	})
+
+
 	var clickedInfo = [];
-    var message = “”;
+    var message = "";
 
     function assignInfo() {
         clickedInfo.name = $("#name").val();
         clickedInfo.age = $("#age").val();
         clickedInfo.gender = $("#gender").val();
-        info.characteristics = [
+        clickedInfo.characteristics = [
               {basic: $("#basic").val()},
               {active: $("#active").val()},
-              {grumpy: $("#grumpy").val()}
+              {grumpy: $("#grumpy").val()},
+              {diva: $("#diva").val()},
               ]
-       }
+    }
 
 
 
