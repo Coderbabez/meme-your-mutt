@@ -104,7 +104,9 @@ $(document).ready(function() {
         console.log(clickedInfo);
 
  		// $("#message").append("name = " + clickedInfo.name + "<br>" + "age = " +clickedInfo.age + "<br>" + "gender = "+ clickedInfo.gender + "<br>" + "image url = "+ clickedInfo.url + "<br>");
- 		$("#message").append(clickedInfo.name + ", " + clickedInfo.age + ", " + clickedInfo.gender  + ". ");
+ 		$("#meme-text").append(clickedInfo.name + ", " + clickedInfo.age + ", " + clickedInfo.gender  + ". ");
+ 		message += "message: " + clickedInfo.name + ", " + clickedInfo.age + ", " + clickedInfo.gender  + ". ";
+ 		console.log(message)
  		collectCharacteristics();
 
         // var basic = $("#basic").is(":checked");
@@ -154,9 +156,11 @@ $(document).ready(function() {
 	function randomBasic() {  
 		var index = Math.floor(Math.random()*basic.length);
 		var basicPhrase = basic[index];
-		console.log(basicPhrase);
 		// $("#message").append("bio = " + basicPhrase); 
-		$("#message").append(basicPhrase + " "); 
+		message += basicPhrase + " ";
+		$("#meme-text").append(basicPhrase + " "); 
+		console.log(basicPhrase);
+		
 	};	
 
 	function randomActive() {   
@@ -164,7 +168,8 @@ $(document).ready(function() {
 		var activePhrase = active[index];
 		console.log(activePhrase);
 		// $("#message").append("bio = " + activePhrase);
-		$("#message").append(activePhrase + " ");  
+		$("#meme-text").append(activePhrase + " ");  
+		message += activePhrase + " ";
 	};	
     
     function randomGrumpy() {   
@@ -172,7 +177,8 @@ $(document).ready(function() {
 		var grumpyPhrase = grumpy[index];
 		console.log(grumpyPhrase);
 		// $("#message").append("bio = " + grumpyPhrase);
-		$("#message").append(grumpyPhrase + " "); 
+		$("#meme-text").append(grumpyPhrase + " ");
+		message += grumpyPhrase + " "; 
 	};	
 
 	function randomDiva() {   
@@ -180,7 +186,8 @@ $(document).ready(function() {
 		var divaPhrase = diva[index];
 		console.log(divaPhrase);
 		// $("#message").append("bio = " + divaPhrase);
-		$("#message").append(divaPhrase + " "); 
+		$("#meme-text").append(divaPhrase + " "); 
+		message += divaPhrase + " ";
 	};	
         
 
