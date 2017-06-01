@@ -1,25 +1,105 @@
 .slice-image{
 	height: auto;
-	width: 50%;
+	width: 30%;
 }
 
-.container{
+/*.container{
 	display: flex;
 	flex-direction: row;
+}*/
+
+#welcome-message{
+	display:block;
+	float:right;
+	margin-right:20%;
+	background-color: white;
 }
 
-.slice1{
-	background-color: red;
+#header-image{
+	width:50%;
+	height:auto;
 }
 
-.slice2{
-	background-color: orange;
+h2{
+	font-size: 60px;
+	color: #0d6185;
 }
 
-.slice3{
-	background-color: yellow;
+h3{
+	font-size: 40px;
+	color: #0d6185;
 }
+
+
+#questions{
+	display:block;
+	float:left;
+	background-color: white;
+	margin-left:20%;
+}
+
+#more-questions{
+	display:block;
+	float:right;
+	background-color: white;
+	margin-right:20%;
+}
+
+.scout{
+	float:right;
+	margin-right:20%;
+	width: 25%;
+}
+
+
+#submit{
+	/*font-family: 'Permanent Marker', cursive;*/
+	font-size: 30px;
+	padding:20px;
+	background-color: #82ae19;
+	color: white; 
+	font-family: 'BurbankSmall-Bold';
+}
+
+#footer{
+	font-size: 30px;
+	color:#45b1e2;
+}
+
+#message{
+	width: 50%;
+	text-align: center;
+	margin:auto;
+}
+
+#image{
+	display:none;
+}
+
 
 h1{
 	font-size: 80px;
+	/*background-color: blue;*/
+	text-align: center;
+	padding: 50px;
+	background-color: #45b1e2;
+	background-image:url("images/squiggly.png");
+	margin-top:-50px;
+	color:white;
 }
+
+body{
+	text-align: center;
+	margin: 50px 0;
+	background-size: 50%;
+	/*background-image:url("images/squiggly.png");*/
+	/*font-family: 'Permanent Marker', cursive;*/
+	font-size: 20px;
+	font-family: 'BurbankSmall-Bold';
+	color: #45b1e2;
+}
+
+@font-face{
+	font-family:'BurbankSmall-Bold';
+	src: url("fonts/burbanksmall-bold.otf");
+	} 
