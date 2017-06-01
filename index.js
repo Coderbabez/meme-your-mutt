@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 	$("#submit").on("click", function(){
 		console.log("user submitted");
-		generatePage(); //don't need function necessarily
+		generatePage();
 		collectInfo();
 		loadImage();	
 	});
@@ -84,7 +84,6 @@ $(document).ready(function() {
 
     function collectInfo() {
         clickedInfo.name = $("#name").val();
-        // clickedInfo.age = $("#age").val();
         clickedInfo.age = $("#age option:selected").text();
         clickedInfo.gender = $("#gender option:selected").text();
         clickedInfo.url = $("#dog-photo").val();
@@ -104,10 +103,10 @@ $(document).ready(function() {
     
 
     function collectCharacteristics(){
-    	$.each(clickedInfo.characteristics, function(key, value){  // key = name of property ("basic, active"); value = what we're assigning (true/false)
+    	$.each(clickedInfo.characteristics, function(key, value){  
     		if(value==true){
     			var characteristicArray = window[key + "Array"];
-		    	var index = Math.floor(Math.random()*characteristicArray.length); // previously, this returns a number in an array
+		    	var index = Math.floor(Math.random()*characteristicArray.length); 
 				var phrase = characteristicArray[index];
 				message += phrase + " "; 		 	
 			}; 		
