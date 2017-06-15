@@ -9,110 +9,139 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div id="banner">
+            HEY NOW! Complete all the required fields to meme your mutt! 
+        </div>
         <h1>MEME YOUR MUTT</h1>
-      <!--   <section class="flex container">  -->
-        <img id="header-image" src="Images/portrait.png">
-    <section class="slice1">
+        <section id="intro-page">
+            <img id="header-image" src="Images/portrait.png">
+        <section class="slice1">
+                <br>
+               <!--  <h3>MEME YOUR MUTT helps dogs get adopted.<br></h2> -->
+                <div id="welcome-message"> <br><br><br><br> BARK wants to <br> bridge the gap <br> between dogs with personality <br> and their furever home. <br> <br> Answer the questions below <br>to meme your pup in a flash!</div>
+                <img class="slice-image bree" src="Images/Sample.jpg">
+        </section> 
             <br>
-           <!--  <h3>MEME YOUR MUTT helps dogs get adopted.<br></h2> -->
-            <div id="welcome-message"> <br><br><br><br><br><br> BARK wants to <br> bridge the gap <br> between dogs with personality <br> and their furever home. <br> <br> Answer the questions below <br>to meme your pup in a flash!</div>
-            <img class="slice-image" src="Images/Sample.png">
-    </section>   
-    </section> 
-    <section class="slice2">       
-        <h2 class="header">The Basics</h2>
-            <p>Let's keep it simple.  Tell us about your pup.</p>
-            <img class="slice-image scout" src="Images/Scout.png">
             <br>
+            <br>  
+        <section class="slice2">       
+            <h2 class="header">The Basics</h2>
+                <p>Let's keep it simple.  Tell us about your pup.</p>
+                <img class="slice-image scout" src="Images/Scout.png">
+                <br>
             <p id="questions"> 
-            <br>
-            <br>
-            <span>Your Dog's Name  <input type="text" id="name"></span> 
-            <br> 
-            <br>
-            <span id="gender">Age <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-            </select>
-            <br>
-            <br>
-            <span>Gender <select>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <br>
-            <br>
-        
-            <!-- <span>Upload a picture of your pup <input type="file" id="name" placeholder="Dog Image URL"></span> -->
-            <span> Link to image of your dog <input type"text" id="dog-photo"> </span>
-            <br>
-            <br>
-        </p>     
-    </section>    
-        <br>
-        <br>
-        <br>
-        <br>
-    <section class="slice3">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <h2 class="header">More Characteristics</h2>
-      <!--   <section class="flex container">   -->  
-      
-        <p id="more-questions">
-            <span>Which characteristic best defines your pup? <br> Select ONE only! </span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <form id= "form-basics">    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>   
+                    <span id="name">Your Dog's Name  <input type="text" placeholder="Dog's name" required name="name"></span> 
+                    <br> 
+                    <br>
+                    <span id="age" name="age"> Age 
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                        </select>
+                    </span>
+                    <br>
+                    <br>
+                    <span id="gender" name="gender">Gender <select>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br>
+                    <br>
+                    <span> Link to image of your dog <input type"text" id="dog-photo" name="link" placeholder="Image URL"</span>
+                    <br>
+                    <br>
+                </form>    
+            </p>     
+        </section>    
             <br>
             <br>
             <br>
             <br>
-            <span> <input type="checkbox" id="active"> Active </span> 
-            <br>
-            <span> <input type="checkbox" id="diva"> Diva </span>
-            <br>
-            <span> <input type="checkbox" id="grumpy"> Grumpy </span>
-            <br>
-            <span> <input type="checkbox" id="basic"> Basic </span>
+        <section class="slice3">
             <br>
             <br>
             <br>
-         </p>
-            <img class="slice-image" src="Images/pug.jpg">
             <br>
             <br>
-        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 class="header">More Characteristics</h2>
+          <!--   <section class="flex container">   -->  
+            <form id="form-characteristics">
+                <img class="slice-image lana" src="Images/pug.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span id="more-questions">Which characteristic best defines your pup? <br> Select ONE only!</span>
+                <br>
+                <br>
+                <span><input type="checkbox" id="active">Active</span> 
+                <br>
+                <br>
+                <span><input type="checkbox" id="diva">Diva</span>
+                <br>
+                <br>
+                <span><input type="checkbox" id="grumpy">Grumpy</span>
+                <br>
+                <br>
+                <span><input type="checkbox" id="basic">Basic</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </form>    
         </section>
-
-        <p id="footer">NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
-        <button id="submit">  SUBMIT!  </button>
             <br>
             <br>
             <br>
-    </section>     
-        
+            <br>
+            <p id="footer"> NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
+            <button id="submit">SUBMIT!</button>
+            <br>
+            <br>
+            <br>
+        </section>        
+        <p id="meme-text"> 
+            <img id="image" src="" alt="No image loaded"/> <br><br>
+        </p>    
+            
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="index.js"></script>
