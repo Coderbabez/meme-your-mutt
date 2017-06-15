@@ -1,6 +1,6 @@
-// Name, url = required
-// error state; valid url?
-// Format the name
-// how to display error (message form field, pop up, *red banner dropdown)
-// one characteristic = one bio message
-// how can we 
+
+format the name - emma
+limit checks to ONE  - emma
+
+display error message (bad url, or any required not filled in) /// red banner at top - mc
+make required - mc

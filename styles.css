@@ -1,6 +1,6 @@
 .slice-image{
 	height: auto;
-	width: 30%;
+	width: 25%;
 }
 
 /*.container{
@@ -8,10 +8,25 @@
 	flex-direction: row;
 }*/
 
+#banner {
+   display: none;
+   height: 40px;
+   line-height: 40px;
+   position: relative;
+   top: -40px;
+   background-color: red;
+   color: white;
+   transition: top .2s; // don't forget to use prefixes
+
+}
+/*.dropdown-notification.active {
+   top: 0;
+}*/
+
 #welcome-message{
 	display:block;
 	float:right;
-	margin-right:20%;
+	margin-right:25%;
 	background-color: white;
 }
 
@@ -48,9 +63,18 @@ h3{
 .scout{
 	float:right;
 	margin-right:20%;
-	width: 25%;
+	/*width: 25%;*/
 }
 
+.lana{
+	float:left;
+	margin-left:20%;
+	/*width: 25%;*/
+}
+
+#name{
+	float:left;
+}
 
 #submit{
 	/*font-family: 'Permanent Marker', cursive;*/
