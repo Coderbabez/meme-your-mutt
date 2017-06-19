@@ -65,28 +65,66 @@ $(document).ready(function() {
         console.log("user submitted");
         generatePage();
         collectInfo();
-        loadImage();    
+        createMeme();
     });
 
     var clickedInfo = [];
     var message = "";
 
-   function generatePage() {
+    function createMeme() {
+        var fileInput = $("#file-input");
+        var file = fileInput[0].files[0];
+
+        ImageTools.resize(file, {
+            width: 2048,
+            height: 2048
+        }, function(blob, hasResized) {
+            var reader = new window.FileReader();
+            reader.readAsDataURL(blob);
+            reader.onloadend = function() {
+                var base64 = reader.result;
+
+                var data = {
+                    "type": "MEME",
+                    "image": base64,
+                    "text": message
+                };
+
+                $.ajax({
+                    'data': JSON.stringify(data),
+                    'url': 'https://mibvtyr870.execute-api.us-east-1.amazonaws.com/dev/',
+                    'type': 'POST',
+                    'dataType': 'json',
+                    'contentType': "application/json; charset=utf-8",
+                    'headers': {
+                        'x-api-key': 'PwzgbUdjKv9oy2p6PBs32zD6qzAs74laRKRrlx1g'
+                    },
+                    'processData': false,
+                    success: function(data) {
+                        $("#image").show();
+                        $("#image").attr("src", data.body.url);
+                    },
+                    failure: function(err) {
+                        console.log(arguments);
+                        console.log(err);
+                    }
+                });
+
+            };
+        });
+    }
+
+    function generatePage() {
         $("#intro-page").hide();
     };
 
-   function loadImage() {
-        $("#image").show();
-        $("#image").attr("src", $("#dog-photo").val());
-    };
-
-   function collectInfo() {
+    function collectInfo() {
         clickedInfo.name = $("#name").val();
         clickedInfo.age = $("#age option:selected").text();
         clickedInfo.gender = $("#gender option:selected").text();
         clickedInfo.url = $("#dog-photo").val();
         clickedInfo.characteristics = {
-              basic: $("#basic").is(":checked"),  
+              basic: $("#basic").is(":checked"),
               active: $("#active").is(":checked"),
               grumpy: $("#grumpy").is(":checked"),
               diva: $("#diva").is(":checked")
@@ -94,16 +132,16 @@ $(document).ready(function() {
          message += clickedInfo.name + ", " + clickedInfo.age + ", " + clickedInfo.gender  + ". ";
          collectCharacteristics();
          $("#meme-text").append(message);
-    };    
-   
-   function collectCharacteristics() {
-        $.each(clickedInfo.characteristics, function (key, value) {  
+    };
+
+    function collectCharacteristics() {
+        $.each(clickedInfo.characteristics, function (key, value) {
            if (value==true) {
                 var characteristicArray = window[key + "Array"];
-                var index = Math.floor(Math.random()*characteristicArray.length); 
+                var index = Math.floor(Math.random()*characteristicArray.length);
                 var phrase = characteristicArray[index];
-                message += phrase + " ";              
-            };         
+                message += phrase + " ";
+            };
        });
     };
 });
