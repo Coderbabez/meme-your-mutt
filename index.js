@@ -122,7 +122,6 @@ $(document).ready(function() {
         clickedInfo.name = $("#name").val();
         clickedInfo.age = $("#age option:selected").text();
         clickedInfo.gender = $("#gender option:selected").text();
-        clickedInfo.url = $("#dog-photo").val();
         clickedInfo.characteristics = {
               basic: $("#basic").is(":checked"),
               active: $("#active").is(":checked"),
@@ -131,7 +130,6 @@ $(document).ready(function() {
          };
          message += clickedInfo.name + ", " + clickedInfo.age + ", " + clickedInfo.gender  + ". ";
          collectCharacteristics();
-         $("#meme-text").append(message);
     };
 
     function collectCharacteristics() {

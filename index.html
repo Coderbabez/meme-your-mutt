@@ -19,7 +19,7 @@
                 <br>
                <!--  <h3>MEME YOUR MUTT helps dogs get adopted.<br></h2> -->
                 <div id="welcome-message"> <br><br><br><br> BARK wants to <br> bridge the gap <br> between dogs with personality <br> and their furever home. <br> <br> Answer the questions below <br>to meme your pup in a flash!</div>
-                <img class="slice-image bree" src="Images/Sample.jpg">
+                <img class="slice-image bree" src="Images/Sample.png">
         </section> 
             <br>
             <br>
@@ -45,7 +45,7 @@
                     <br>
                     <br>
                     <br>   
-                    <span id="name">Your Dog's Name  <input type="text" placeholder="Dog's name" required name="name"></span> 
+                    <span >Your Dog's Name  <input type="text" placeholder="Dog's name" required name="name" id="name"></span> 
                     <br> 
                     <br>
                     <span id="age" name="age"> Age 
@@ -71,7 +71,7 @@
                     </select>
                     <br>
                     <br>
-                    <span> Link to image of your dog <input type="file" accept="image/*" /></span>
+                    <span> Link to image of your dog <input type="file" accept="image/*" id="file-input" /></span>
                     <br>
                     <br>
                 </form>    
@@ -138,12 +138,12 @@
             <br>
             <br>
         </section>        
-        <p id="meme-text"> 
-            <img id="image" src="" alt="No image loaded"/> <br><br>
-        </p>    
+    
+        <img id="image" src="" alt="No image loaded"/> <br><br>  
             
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="index.js"></script>
+        <script src="image.js"></script>
     </body>
 </html>
