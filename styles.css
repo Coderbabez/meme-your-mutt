@@ -3,11 +3,6 @@
     width: 25%;
 }
 
-/*.container{
-    display: flex;
-    flex-direction: row;
-}*/
-
 #banner {
    display: none;
    height: 40px;
@@ -17,27 +12,29 @@
    background-color: red;
    color: white;
    transition: top .2s; // don't forget to use prefixes
+}
+
+#welcome-message-parent{
+    display: block;
+    background-color: white;
 
 }
-/*.dropdown-notification.active {
-   top: 0;
-}*/
-
 #welcome-message{
     display: block;
-    float: right;
-    margin-right: 25%;
     background-color: white;
+    font-size: 40px;   
 }
 
 #header-image{
-    width: 50%;
+    width: 40%;
     height: auto;
+    margin: 5% 0% 0% 0%;
 }
 
 h2{
-    font-size: 60px;
-    color: #0d6185 ;
+    font-size: 70px;
+    color: #0d6185;
+    padding-top: 3%;
 }
 
 h3{
@@ -46,30 +43,62 @@ h3{
 }
 
 
+
+.slice1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slice2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%
+}
+
+.slice3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%
+}
+
+#form-basics{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: pink;
+}
+
+#form-characteristics{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.basic-slice{
+    background-color: pink;
+}
+
 #questions{
-    display: block;
-    float: left;
+    display: flex;
     background-color: white;
-    margin-left: 20%;
+    flex-direction: column;
+    align-items: center;
 }
 
 #more-questions{
     display: block;
-    float: right;
     background-color: white;
-    margin-right: 20%;
 }
 
-.scout{
-    float: right;
-    margin-right: 20%;
-    /*width: 25%;*/
-}
-
-.lana{
-    float: left;
-    margin-left: 20%;
-    /*width: 25%;*/
+#characteristics-box{
+    display: flex;
+    flex-direction: column;
 }
 
 #name{
@@ -85,9 +114,11 @@ h3{
     font-family: 'BurbankSmall-Bold';
 }
 
-#footer{
+.footer{
     font-size: 30px;
-    color:#45b1e2 ;
+    color: #45b1e2;
+    background-color: purple;
+    padding: 5%;
 }
 
 #meme-text{
@@ -103,7 +134,7 @@ h3{
 
 
 h1{
-    font-size: 80px;
+    font-size: 170px;
     /*background-color: blue;*/
     text-align: center;
     padding: 50px;
@@ -117,9 +148,7 @@ body{
     text-align: center;
     margin: 50px 0;
     background-size: 50%;
-    /*background-image:url("images/squiggly.png");*/
-    /*font-family: 'Permanent Marker', cursive;*/
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'BurbankSmall-Bold';
     color: #45b1e2 ;
 }

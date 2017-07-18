@@ -62,12 +62,53 @@ var basicArray = [
 $(document).ready(function() {
 
     $("#submit").on("click", function() {
+        // $("#form-basics").validate();
+        // $("#form-characteristics").validate();
         console.log("user submitted");
-        generatePage();
-        collectInfo();
-        createMeme();
+        validateForm();
     });
 
+    // function validateForm(){
+    //     $("#form-basics").validate({
+    //         rules: {
+    //             name: "required",
+    //             age: "required",
+ 
+    //         },
+    //         messages: {
+    //             name: "Please enter your name",
+    //             age: "Please enter your dog's age",
+    //         },
+            
+    //         submitHandler: function(form) {
+    //             form.submit();
+    //         }
+    //     });
+    // };           
+
+ function validateForm(){
+        clickedInfo.name = $("#name").val();
+        clickedInfo.age = $("#age option:selected").text()  ;
+        clickedInfo.gender = $("#gender option:selected").text();
+        clickedInfo.characteristics = {
+              basic: $("#basic").is(":checked"),
+              active: $("#active").is(":checked"),
+              grumpy: $("#grumpy").is(":checked"),
+              diva: $("#diva").is(":checked")
+        };
+        if (clickedInfo.name == "") {
+            window.alert("You need to type your dog's name!");
+        } else if (clickedInfo.age == ""){
+             window.alert("You need to type your dog's name!");
+        } else{
+            generatePage();
+            collectInfo();
+            createMeme();
+        };
+};        
+
+        
+            
     var clickedInfo = [];
     var message = "";
 
@@ -116,6 +157,7 @@ $(document).ready(function() {
 
     function generatePage() {
         $("#intro-page").hide();
+        $("body").css("background-color", "#b4e2f7");
     };
 
     function collectInfo() {

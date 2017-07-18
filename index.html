@@ -9,144 +9,91 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="banner">
+        <p id="banner">
             HEY NOW! Complete all the required fields to meme your mutt! 
-        </div>
-        <h1>MEME YOUR MUTT</h1>
+        </p>
+        <h1>MEME YOUR MUTT
+        <img id="header-image" src="Images/portrait.png"></h1>
         <section id="intro-page">
-            <img id="header-image" src="Images/portrait.png">
-        <section class="slice1">
-                <br>
-               <!--  <h3>MEME YOUR MUTT helps dogs get adopted.<br></h2> -->
-                <div id="welcome-message"> <br><br><br><br> BARK wants to <br> bridge the gap <br> between dogs with personality <br> and their furever home. <br> <br> Answer the questions below <br>to meme your pup in a flash!</div>
-                <img class="slice-image bree" src="Images/Sample.png">
-        </section> 
-            <br>
-            <br>
-            <br>  
-        <section class="slice2">       
-            <h2 class="header">The Basics</h2>
+          <!--   <img id="header-image" src="Images/portrait.png"> -->
+
+            <section class="slice1">
+                    <br>
+                    <div id="welcome-message-parent"> <p id="welcome-message">
+                        BARK wants to help dogs find<br>
+                        their voice and their furever home. <br>
+                        Answer the questions below to meme <br>
+                        your mutt in a flash!</p> </div>
+                    <img class="slice-image bree" src="Images/noodle_meme.png">
+            </section> 
+            
+            <section class="basic-slice">
+                <h2 class="header">The Basics</h2>
                 <p>Let's keep it simple.  Tell us about your pup.</p>
-                <img class="slice-image scout" src="Images/Scout.png">
-                <br>
-            <p id="questions"> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <form id= "form-basics">    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>   
-                    <span >Your Dog's Name  <input type="text" placeholder="Dog's name" required name="name" id="name"></span> 
-                    <br> 
-                    <br>
-                    <span id="age" name="age"> Age 
-                        <select>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                        </select>
-                    </span>
-                    <br>
-                    <br>
-                <span>Gender <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </span>
-                    <br>
-                    <br>
-                    <span> Link to image of your dog <input type="file" accept="image/*" id="file-input" /></span>
-                    <br>
-                    <br>
-                </form>    
-            </p>     
-        </section>    
-            <br>
-            <br>
-            <br>
-            <br>
-        <section class="slice3">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2 class="header">More Characteristics</h2>
-          <!--   <section class="flex container">   -->  
-            <form id="form-characteristics">
-                <img class="slice-image lana" src="Images/pug.jpg">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <span id="more-questions">Which characteristic best defines your pup? <br> Select ONE only!</span>
-                <br>
-                <br>
-                <span><input type="checkbox" id="active">Active</span> 
-                <br>
-                <br>
-                <span><input type="checkbox" id="diva">Diva</span>
-                <br>
-                <br>
-                <span><input type="checkbox" id="grumpy">Grumpy</span>
-                <br>
-                <br>
-                <span><input type="checkbox" id="basic">Basic</span>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </form>    
-        </section>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p id="footer"> NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
-            <button id="submit">SUBMIT!</button>
-            <br>
-            <br>
-            <br>
+               
+                <section class="slice2">       
+                        <img class="slice-image" src="Images/sadie_meme.png">
+                        <br>
+                    <div id="questions">    
+                        <form id="form-basics">      
+                            <label for="name">Your Dog's Name</label>
+                            <input id="name" name="name" minlength="2" type="text" placeholder="Type your pup's name" required >
+                            <!-- <p> Your Dog's Name <input type="text" placeholder= "Dog's name" required name="name" id="name"</p>  -->
+                            <br> 
+                            <p>Age <select id="age" name="age">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </p></select> 
+                            <p>Gender <select id="gender" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </p>   
+                            <span> Link to image of your dog <input type="file" accept="image/*" id="file-input" name="upload"></span>
+                            <br>
+                            <br>
+                        </form>    
+                    </div>     
+                </section> 
+            </section class="basic-slice">       
+               
+            <h2 class="header">More Characteristics</h2> 
+            <span id="more-questions">Which characteristic best defines your pup? <br> Select ONE only!</span> 
+
+            <section class="slice3">
+               <img class="slice-image" src="Images/ziggy_meme.png"> 
+               <!-- <form id="form-characteristics"> -->
+                <div id="characteristics-box">    
+                    <p><input type="checkbox" id="active">Active</p> 
+                    <p><input type="checkbox" id="diva">Diva</p>
+                    <p><input type="checkbox" id="grumpy">Grumpy</p>
+                    <p><input type="checkbox" id="basic">Basic</p>
+                </div>    
+                <!-- </form>  -->   
+            </section>
+            
+            <section class="footer">    
+                <p> NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
+                <button id="submit">SUBMIT!</button>
+            </section>    
         </section>        
     
         <img id="image" src="" alt="No image loaded"/> <br><br>  
