@@ -28,20 +28,22 @@
 #header-image{
     width: 40%;
     height: auto;
-    margin: 5% 0% 0% 0%;
+    margin: 2% 0% 0% 0%;
 }
 
 h2{
     font-size: 70px;
     color: #0d6185;
-    padding-top: 3%;
+    padding-top: 2%;
+    margin-bottom: 1%;
 }
 
-h3{
-    font-size: 40px;
-    color: #0d6185 ;
+.tagline{
+    color: yellow;
+    font-size: 30px;
+    margin-top: 0px;
+    color: #0d6185;
 }
-
 
 
 .slice1{
@@ -71,7 +73,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: pink;
+    background-color: #b4e2f7;
 }
 
 #form-characteristics{
@@ -81,7 +83,7 @@ h3{
 }
 
 .basic-slice{
-    background-color: pink;
+    background-color: #b4e2f7;
 }
 
 #questions{
@@ -134,21 +136,20 @@ h3{
 
 
 h1{
-    font-size: 170px;
+    font-size: 150px;
     /*background-color: blue;*/
     text-align: center;
     padding: 50px;
     background-color: #45b1e2 ;
     background-image:url("images/squiggly.png");
-    margin-top:-50px;
-    color:white;
+    margin-top: -50px;
+    color: white;
 }
 
 body{
     text-align: center;
-    margin: 50px 0;
     background-size: 50%;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'BurbankSmall-Bold';
     color: #45b1e2 ;
 }
