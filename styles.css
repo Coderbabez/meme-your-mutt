@@ -42,6 +42,14 @@ h2{
     color: yellow;
     font-size: 30px;
     margin-top: 0px;
+    color: #45b1e2;
+}
+
+.characteristics{
+    color: #45b1e2;
+}
+
+.basics{
     color: #0d6185;
 }
 
@@ -73,7 +81,8 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #b4e2f7;
+    background-color: #97d4e9;
+    color: #0d6185;
 }
 
 #form-characteristics{
@@ -83,7 +92,11 @@ h2{
 }
 
 .basic-slice{
-    background-color: #b4e2f7;
+    background-color: #97d4e9;
+}
+
+#footer-text{
+    color: white;
 }
 
 #questions{
@@ -119,7 +132,7 @@ h2{
 .footer{
     font-size: 30px;
     color: #45b1e2;
-    background-color: purple;
+    background-color: #45b1e2;
     padding: 5%;
 }
 
@@ -142,7 +155,7 @@ h1{
     padding: 50px;
     background-color: #45b1e2 ;
     background-image:url("images/squiggly.png");
-    margin-top: -50px;
+    margin-top: -0px;
     color: white;
 }
 
