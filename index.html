@@ -15,8 +15,6 @@
         <h1>MEME YOUR MUTT
         <img id="header-image" src="Images/portrait.png"></h1>
         <section id="intro-page">
-          <!--   <img id="header-image" src="Images/portrait.png"> -->
-
             <section class="slice1">
                     <br>
                     <div id="welcome-message-parent"> <p id="welcome-message">
@@ -29,16 +27,15 @@
             
             <section class="basic-slice">
                 <h2 class="header">The Basics</h2>
-                <p>Let's keep it simple.  Tell us about your pup.</p>
-               
+                <p class="tagline basics">Let's keep it simple.  Tell us about your pup.</p>
+                <br>
+                <br>
                 <section class="slice2">       
-                        <img class="slice-image" src="Images/sadie_meme.png">
-                        <br>
+                    <img class="slice-image" src="Images/sadie_meme.png">
                     <div id="questions">    
                         <form id="form-basics">      
                             <label for="name">Your Dog's Name</label>
                             <input id="name" name="name" minlength="2" type="text" placeholder="Type your pup's name" required >
-                            <!-- <p> Your Dog's Name <input type="text" placeholder= "Dog's name" required name="name" id="name"</p>  -->
                             <br> 
                             <p>Age <select id="age" name="age">
                                 <option value="1">1</option>
@@ -75,8 +72,8 @@
                 </section> 
             </section class="basic-slice">       
                
-            <h2 class="header">More Characteristics</h2> 
-            <span id="more-questions">Which characteristic best defines your pup? <br> Select ONE only!</span> 
+            <h2 class="header characteristics">More Characteristics</h2> 
+            <p class="tagline">Which characteristic best defines your pup? <br> Select ONE only!</p> 
 
             <section class="slice3">
                <img class="slice-image" src="Images/ziggy_meme.png"> 
@@ -91,7 +88,7 @@
             </section>
             
             <section class="footer">    
-                <p> NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
+                <p id="footer-text"> NOW LET THE DOGE MEME GODS <br> DO THEIR MAGIC...</p>
                 <button id="submit">SUBMIT!</button>
             </section>    
         </section>        
